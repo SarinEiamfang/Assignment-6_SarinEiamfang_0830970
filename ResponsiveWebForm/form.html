@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	WEB301 Assignment 6
+    Creating a Responsive Web Form.
+	Filename: form.html
+	
+	Author: Sarin Eiamfang 0830970
+	Date:   2023-10-31
+-->
+
+<head>
+	
+    <title>Newsletter Signup Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="formstyle.css" rel="stylesheet">
+		
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+</head>
+
+    <body>
+
+        <header>
+                <h1>Sarin Eiamfang's Blog</h1>
+        </header>
+
+        <form class="container" action="#" method="get">
+
+                <legend>Newsletter Signup Form</legend>
+                
+                    <section class="box">
+                        <label for="fName">First Name :</label>
+                        <input type="text" id="fName" name="fName" placeholder="Enter your first name" required autofocus />
+                    </section>
+                    
+                    <section class="box">
+                        <label for="lName">Last Name :</label>
+                        <input type="text" id="lName" name="lName" placeholder="Enter your last name" required />
+                    </section>
+
+                    <section class="box">
+                        <label for="email">Email Address :</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+                    </section>	
+
+                    <section class="box">		
+                        <label for="tel">Phone Number :</label>
+                        <input type="tel" id="tel" name="tel" placeholder="(000) 000-0000" 
+                            pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}" />			
+                    </section>	
+
+                    <section class="box"> 
+                        <label for="address">Address :</label>
+                        <textarea name="address" id="address" placeholder="type your address here"></textarea>
+                    </section>
+                         
+                    <section class="box">
+                        <label for="schedule">Select your schedule :</label>
+                        <ul>
+                            <li> 
+                                <input type="radio" id="biweekly" name="schedule" value="biweek" />
+                                <label for="biweekly">Bi-weekly</label>
+                            </li>
+                            <li> 
+                                <input type="radio" id="monthly" name="schedule" value="month"/>
+                                <label for="monthly">Monthly</label>
+                            </li>
+                        </ul>
+                    </section>
+            
+                <section class="button">
+                    <input type="submit" name="submit" value="Submit"/>
+                    <input type="reset" name="reset" value="Cancel"/>
+                </section>
+
+        </form>
+
+    </body>
+</html>

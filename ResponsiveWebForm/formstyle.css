@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/****************
+	WEB301 Assignment 6
+    Creating a Responsive Web Form.
+	Filename: formstyle.css
+	
+	Author: Sarin Eiamfang 0830970
+	Date:   2023-10-31
+
+	==================
+	Table of Contents
+	==================
+	1. HTML Body Styles
+	2. Heading Styles
+	3. Main Body Styles
+
+****************/
+
+/****************************  MAIN STYLES - DESKTOP AND TABLET  ***********************************/
+
+/**********************
+1. HTML Body Styles
+**********************/
+
+body {
+	font-family: 'Cinzel', serif;
+	min-height: 100vh;
+}
+
+/**********************
+2. Heading Styles
+**********************/
+
+h1 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+/**********************
+3. Main Body Styles
+**********************/
+
+.container {
+	max-width: 800px;
+	margin: auto;
+	width: 100%;
+	background-color: #7eff00;
+	padding: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+	opacity: 0.7;
+
+}
+
+legend {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+section {
+	padding: 5px;
+	display: block;
+}
+
+.box {
+    display: flex;
+    align-items: center; 
+	margin-right: 30px;
+}
+
+/*The left column should contain labels, 
+*and the right column should contain input fields.
+*/
+
+.box label {
+    width: 200px; 
+    text-align: right; 
+    margin-right: 10px; 
+}
+
+.box input,
+.box textarea,
+.box ul li label {
+    flex: 1; /* Let the input fields take up the remaining space */
+    font-family: 'Cinzel', serif;
+}
+
+
+/****************
+  Radio Styles
+****************/
+
+ul {
+	list-style-type: none;
+}
+
+/****************
+  Button Styles
+****************/
+
+.button {
+	text-align: center;
+	letter-spacing: 10px;
+}
+
+.button input {
+	background: #7eff00;
+	font-family: 'Cinzel', serif;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button input:hover {
+	background: #b7ff00;
+
+}
+
+
+
+/****************************  MEDIA STYLES - MOBILE  ***********************************/
+
+@media screen and (max-width: 600px)
+{
+   
+	/**********************
+	1. HTML Body Styles
+	**********************/
+
+	body {
+        min-width: 480px;
+	}
+
+	h1 {
+		color: #7eff00;
+		font-size: 1.2em;
+		text-align: left;
+	}
+
+
+	/**********************
+	3. Main Body Styles
+	**********************/
+
+	.container {
+
+		background-color:black;
+	}
+
+	legend {
+		color: #7eff00;
+	}
+
+	.box {
+		display: grid;
+
+	}
+
+	/*The left column should contain labels, 
+	*and the right column should contain input fields.
+	*/
+
+	.box label {
+		color: #7eff00;
+		font-size: 1.2em;
+		width: auto; 
+		text-align: left; 
+		margin-right: 0; 
+	}
+
+	.box input,
+	.box textarea {
+		height: 100%; 
+	}
+
+
+	/****************
+	Button Styles
+	****************/
+
+	.button {
+		display: grid;
+		grid-gap: 5px;
+		margin-right: 30px;
+	}
+
+	.button input {
+		align-items: center;
+		height: 3em;
+		font-size: 1em;
+
+	}
+
+
+}
+  
